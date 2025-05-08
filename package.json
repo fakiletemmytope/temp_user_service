@@ -1,0 +1,26 @@
+{
+  "name": "user_service",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Fakile Temitope",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "docker": "NODE_ENV=dev node app.js",
+    "dev": "NODE_ENV=dev nodemon app.js",
+    "test": "NODE_ENV=test jest --runInBand --verbose --silent=false --detectOpenHandles"
+  },
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2",
+    "nodemailer": "^6.10.1",
+    "nodemon": "^3.1.9"
+  }
+}
